@@ -20,6 +20,8 @@ pip install git+https://github.com/ZiYang-xie/viser.git
 
 cd /root/.pyenv/versions/3.11.13/lib/python3.11/site-packages/unik3d/ops/knn
 
+updatedb && locate "compile.sh"
+
 bash compile.sh
 
 echo "Done setup for WorldGen"
