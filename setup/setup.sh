@@ -11,7 +11,7 @@ cd WorldGen
 
 # Install torch and torchvision (with GPU support)
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
-
+pip install git+https://github.com/facebookresearch/pytorch3d.git
 
 # Install worldgen
 pip install .
