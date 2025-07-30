@@ -10,7 +10,7 @@ RUN mkdir -p /data && chmod -R 777 /data
 
 WORKDIR /setup
 COPY ./setup/deps.sh /setup/deps.sh
-COPY ./setup/deps3d.sh.sh /setup/deps3d.sh
+COPY ./setup/deps3d.sh /setup/deps3d.sh
 COPY ./setup/env.sh /setup/env.sh
 COPY ./setup/requirements.txt /setup/requirements.txt
 COPY ./setup/setup.sh /setup/setup.sh
