@@ -13,12 +13,13 @@ cd WorldGen
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 pip install git+https://github.com/facebookresearch/pytorch3d.git
 
-# Install worldgen
+# Install WorldGen
 pip install .
 
 pip install git+https://github.com/ZiYang-xie/viser.git
 
-updatedb
-locate unik3d
-echo "unik3d"
-# cd unik3d/ops/knn && bash compile.sh
+cd /root/.pyenv/versions/3.11.13/lib/python3.11/site-packages/unik3d/ops/knn
+
+bash compile.sh
+
+echo "Done setup for WorldGen"
