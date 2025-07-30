@@ -4,7 +4,7 @@ services:
   worldgen:
     container_name: worldgen
     hostname: worldgen
-    build: Dockerfile
+    build: .
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     ports:
