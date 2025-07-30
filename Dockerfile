@@ -12,6 +12,7 @@ COPY ./setup/setup.sh /setup/setup.sh
 COPY ./setup/debug.sh /setup/debug.sh
 COPY ./setup/run.sh /setup/run.sh
 COPY ./setup/startup.sh /setup/startup.sh
+COPY ./setup/requirements.txt /setup/requirements.txt
 
 
 # Copy
