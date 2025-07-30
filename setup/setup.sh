@@ -17,3 +17,8 @@ pip install git+https://github.com/facebookresearch/pytorch3d.git
 pip install .
 
 pip install git+https://github.com/ZiYang-xie/viser.git
+
+updatedb
+locate unik3d
+echo "unik3d"
+# cd unik3d/ops/knn && bash compile.sh
