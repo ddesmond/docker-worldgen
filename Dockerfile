@@ -2,6 +2,7 @@ FROM nvidia/cuda:12.3.2-runtime-rockylinux9
 
 
 ENV TZ=Europe/Zagreb
+ENV PIP_ROOT_USER_ACTION=ignore
 
 ARG USE_PERSISTENT_DATA
 
@@ -9,6 +10,7 @@ RUN mkdir -p /data && chmod -R 777 /data
 
 WORKDIR /setup
 COPY ./setup/deps.sh /setup/deps.sh
+COPY ./setup/deps3d.sh.sh /setup/deps3d.sh
 COPY ./setup/env.sh /setup/env.sh
 COPY ./setup/requirements.txt /setup/requirements.txt
 COPY ./setup/setup.sh /setup/setup.sh
@@ -37,8 +39,7 @@ ARG PYTHON_VERSION=3.11
 RUN pyenv install $PYTHON_VERSION && \
     pyenv global $PYTHON_VERSION && \
     pyenv rehash && \
-    pip install --no-cache-dir --upgrade pip setuptools wheel \
-    datasets huggingface-hub "protobuf<4" "click<8.1"
+    pip install --no-cache-dir --upgrade pip setuptools wheel
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade -r /setup/requirements.txt
