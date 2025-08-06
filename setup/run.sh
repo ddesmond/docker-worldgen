@@ -6,6 +6,7 @@ source /setup/env.sh
 cd $HOME/WorldGen
 # Generate a 3D scene from a text prompt
 python demo.py -p "A beautiful landscape with a river and mountains"
+python demo.py -p "A beautiful landscape of ancient city of Rome" --return_mesh
 
 # Generate a 3D scene from an image
 # python demo.py -i "path/to/your/image.jpg" -p "<Optional: TEXT PROMPT to describe the scene>"
