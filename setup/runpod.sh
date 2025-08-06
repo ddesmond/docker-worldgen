@@ -22,7 +22,7 @@ export TORCH_CUDA_ARCH_LIST=8.9   #ada rtx 6000
 git clone https://github.com/facebookresearch/pytorch3d.git
 cd pytorch3d
 python setup.py install
-
+pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 cd ..
 
 # Clone the repository
